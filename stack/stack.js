@@ -1,4 +1,4 @@
-function Stack(){
+function Stack() {
     
   this.top = null;
   this.count = 0;
