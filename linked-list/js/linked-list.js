@@ -60,6 +60,7 @@ LinkedList.prototype = {
     }
     return count;
   },
+  
   toArray: function() {
     var current = this.head, array = [];
     while(current) {
