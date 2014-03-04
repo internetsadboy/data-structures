@@ -50,4 +50,3 @@ function Queue() {
 }
 
 exports.Queue = Queue;
-
