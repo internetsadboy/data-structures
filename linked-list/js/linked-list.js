@@ -3,6 +3,7 @@ function LinkedList() {
 }
 
 LinkedList.prototype = {
+	
   constructor: LinkedList,
   
   add: function(data) {
