@@ -35,7 +35,7 @@ function Stack(){
     } else {
       var out = this.top;
       this.top = this.top.next;
-      if(this.count>0) {
+      if(this.count > 0) {
         this.count--;
       }
       return out.data;
