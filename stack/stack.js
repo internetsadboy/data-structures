@@ -57,3 +57,5 @@ function Stack() {
   }
   
 }
+
+exports.Stack = Stack
