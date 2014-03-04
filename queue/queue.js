@@ -47,7 +47,7 @@ function Queue() {
     return 'invalid data';
   }
 
-};
+}
 
 exports.Queue = Queue;
 
