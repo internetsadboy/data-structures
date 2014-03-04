@@ -51,6 +51,7 @@ LinkedList.prototype = {
       return null;
     }
   },
+  
   size: function() {
     var current = this.head, count = 0;
     while(current) {
@@ -67,6 +68,7 @@ LinkedList.prototype = {
     }
     return array;
   },
+  
   toString: function() {
     return this.toArray().toString();
   }
