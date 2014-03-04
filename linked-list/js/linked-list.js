@@ -18,8 +18,8 @@ LinkedList.prototype = {
         current = current.next;
       }
       current.next = node;
-      }
-    },
+    }
+  },
   item: function(index) {
     if(index > -1) {
       var current = this.head, i = 0;
@@ -33,17 +33,17 @@ LinkedList.prototype = {
   },
   remove: function(index) {
     if(index > -1) {
-      var current = this.head, previous, i = 0;
-        if(index === 0) {
-          this.head = current.next;
-        } else {
-	  while(i++ < index) {
-	    previous = current;
-	    current = current.next;
-	  }
-	  previous.next = current.next;
-        }
-      	return (current ? current.data : null);
+    var current = this.head, previous, i = 0;
+      if(index === 0) {
+        this.head = current.next;
+      } else {
+	while(i++ < index) {
+	  previous = current;
+	  current = current.next;
+	}
+	previous.next = current.next;
+      }
+      return (current ? current.data : null);
     } else {
       return null;
     }
