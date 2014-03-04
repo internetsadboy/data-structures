@@ -4,6 +4,7 @@ function LinkedList() {
 
 LinkedList.prototype = {
   constructor: LinkedList,
+  
   add: function(data) {
     var node = {
       data:data,
@@ -20,6 +21,7 @@ LinkedList.prototype = {
       current.next = node;
     }
   },
+  
   item: function(index) {
     if(index > -1) {
       var current = this.head, i = 0;
@@ -31,6 +33,7 @@ LinkedList.prototype = {
       return null;
     }
   },
+  
   remove: function(index) {
     if(index > -1) {
     var current = this.head, previous, i = 0;
@@ -67,7 +70,7 @@ LinkedList.prototype = {
   toString: function() {
     return this.toArray().toString();
   }
-};
+}
 
 exports.LinkedList = LinkedList;
 
