@@ -33,7 +33,6 @@ function Queue() {
   }
 
   this.contains = function(data) {
-    console.log('this.contains(9)')
     for(var i in this._queue) {
       if(data === this._queue[i]) return true;
     }
