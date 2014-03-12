@@ -1,6 +1,6 @@
 var LinkedList = require('./linked-list').LinkedList;
-// test add
 var myList = new LinkedList();
+// test add
 for(var i = 1; i <= 10; i++) {
 	myList.add(i);
 }
