@@ -1,19 +1,16 @@
 var LinkedList = require('./linked-list').LinkedList;
-
 // test add
-var myList = new LinkedList;
-for(var i = 1; i <= 100; i++) {
+var myList = new LinkedList();
+for(var i = 1; i <= 10; i++) {
 	myList.add(i);
 }
+// test toArray, size
 console.log(myList.toArray());
-console.log(myList.size());
-
+console.log('myList size:   ' + myList.size());
 // test remove
-for(var i = 0; i < 50; i++) {
-	myList.remove(i);
-}
+myList.remove(0);
+myList.remove(8);
 console.log(myList.toArray());
-console.log('myList size:    ' + myList.size());
-
-// test item
-console.log('myList.item(0): ' + myList.item(0));
+console.log('myList size:   ' + myList.size());
+// test get
+console.log('myList.get(0): ' + myList.get(0));
