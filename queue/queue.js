@@ -40,7 +40,7 @@ function Queue() {
       if(node === this._queue[i]) return true;
     }
     return false;
-  }
+  } 
   // iterate through the _queue 
   // if node is in _queue -> return index
   this.getIndex = function(node) {
